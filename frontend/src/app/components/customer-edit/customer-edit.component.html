@@ -1,0 +1,22 @@
+<p>customer-edit works!</p>
+
+
+
+
+<table *ngIf="customer">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Operation</th>
+  </tr>
+  <tr >
+    <td>{{customer.name}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.phone}}</td>
+    <td>
+        <button routerLink="/">Back</button>
+    </td>
+        
+  </tr>  
+</table>

@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { CustomerListComponent } from './customer-list/customer-list.component';
-import { CustomerCreateComponent } from './customer-create/customer-create.component';
-import { CustomerDetailsComponent } from './customer-details/customer-details.component';
-import { CustomerEditComponent } from './customer-edit/customer-edit.component';
+import { CustomerListComponent } from './components/customer-list/customer-list.component';
+import { CustomerCreateComponent } from './components/customer-create/customer-create.component';
+import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
+import { CustomerEditComponent } from './components/customer-edit/customer-edit.component';
 
 export const routes: Routes = [
     {

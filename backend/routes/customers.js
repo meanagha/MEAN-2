@@ -61,7 +61,7 @@ router.delete('/:id', async (req, res) => {
 
     try {
         const id = req.params.id;
-        const deletedcustomer = Customer.deleteOne({_id:id});
+        const deletedcustomer = await Customer.deleteOne({_id:id});
         res.status(200).json(deletedcustomer);
     } catch (e) {
         res.status(200).json({ message: "An error occurred" });

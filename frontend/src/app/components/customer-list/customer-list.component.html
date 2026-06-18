@@ -1,0 +1,22 @@
+<p>customer-list works!</p>
+<button [routerLink]="'/create'">Create Customer</button>
+
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Operation</th>
+  </tr>
+  <tr *ngFor="let customer of customers">
+    <td>{{customer.name}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.phone}}</td>
+    <td>
+        <button [routerLink]="'/edit/' + customer._id">Edit</button>
+        <button [routerLink]="'/details/' + customer._id">details</button>
+        <button (click)="delete(customer)">Delete</button></td>
+  </tr>  
+</table>
